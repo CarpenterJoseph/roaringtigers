@@ -1,0 +1,332 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-image: url("img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    cursor: default;
+}
+
+#wrap {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 930px;
+}
+
+
+/* HEADER */
+#header-wrap{
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#header-wrap img{
+    height: 200px;
+    width: auto;
+    display:block;
+    margin:auto;
+}
+
+
+/* NAV */
+#nav {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+#nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 12pt;
+    -webkit-transition: background-color .1s ease-out;
+    -moz-transition: background-color .1s ease-out;
+    -o-transition: background-color .1s ease-out;
+    transition: background-color .1s ease-out;
+}
+
+#nav a:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#nav .active {
+    background-color: #ff9900;
+    color: white;
+}
+
+#nav a:last-child{
+    float: right;
+}
+
+
+/* CONTENT */
+#body-wrap{
+    padding: 10px;
+    background-color: rgbA(242,242,242, 0.75);
+    color: #333;
+    cursor: default;
+}
+
+#body-wrap h3{
+    color: #333;
+    font-weight: bold;
+    font-size: 17pt;
+    padding: 0;
+    margin-top: 10px;
+    cursor: default;
+    text-align: center;
+}
+
+#body-wrap h4{
+    margin-bottom: 5px;
+}
+
+#body-wrap ul{
+    margin-top: 0px;
+}
+
+
+/* APPLY */
+#apply{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#apply-link{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* CALENDAR */
+#calendar{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#calendar th{
+    font-weight: normal;
+    width: 125px;
+    background-color: #333;
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #f2f2f2;
+    font-size: 12pt;
+}
+
+#calendar td{
+    background-color: #C7C7C7;
+    margin: 0;
+    height: 128px;
+    vertical-align: top;
+    padding: 3px;
+    padding-bottom: 0;
+    color: #333;
+}
+
+#calendar .filled{
+    background-color: #8A8A8A;
+    font-weight: bold;
+}
+
+#calendar .data{
+    background-color: #8A8A8A;
+    font-weight: bold;
+    width: 121px;
+    word-wrap: break-word;
+}
+
+#calendar .data-content{
+    font-size: 11pt;
+    font-weight: normal;
+    word-wrap: break-word;
+    margin-top: 1px;
+    padding: 3px;
+    padding-top: 2px;
+    margin-bottom: 3px;
+    color: #f2f2f2;
+    background-color: #333;
+    border-radius: 4px;
+    -webkit-transition: background-color .1s ease-out;
+    -moz-transition: background-color .1s ease-out;
+    -o-transition: background-color .1s ease-out;
+    transition: background-color .1s ease-out;
+    cursor: pointer;
+}
+
+#calendar .data-content:hover{
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#calendar .data-content-active{
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#calendar, #calendar th, #calendar td{
+    border: 1px solid #333;
+}
+
+caption h3{
+    color: #333;
+    font-weight: bold;
+    font-size: 17pt;
+    padding: 0;
+    margin-top: 10px;
+    cursor: default;
+}
+
+#calendar caption button{
+    background-color: #333;
+    color: #f2f2f2;
+    font-weight: normal;
+    border: none;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12pt;
+    width: 129px;    
+    cursor: pointer;
+    -webkit-transition: background-color .1s ease-out;
+    -moz-transition: background-color .1s ease-out;
+    -o-transition: background-color .1s ease-out;
+    transition: background-color .1s ease-out;
+}
+
+#calendar caption button:hover{
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#calLeftButton{
+    float: left;
+    position: relative;
+    top: 27px;
+}
+
+#calRightButton{
+    float: right;
+    position: relative;
+    top: 27px;
+}
+
+
+/* CALENDAR POPUP WINDOW */
+#popup-wrap{
+    z-index: 1000;
+    color: #333;
+    background-color: #f2f2f2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 400px;
+    padding: 8px;
+    border-color: #333;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    padding-top: 7px;
+    width: 700px;
+    position: fixed;
+}
+
+#popup-wrap #title{
+    font-size: 14pt;
+    float: left;
+    margin: 0px;
+}
+
+#popup-wrap #dateTime{
+    font-size: 14pt;
+    float: right;
+    padding-right: 26px;
+    margin: 0px;
+}
+
+#popup-wrap #exitPopup{
+    left: 688px;
+    width: 20px;
+    margin-top: 1px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#popup-wrap #description{
+    font-size: 12pt;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+/* ROSTER */
+#roster-wrap{
+    z-index: 1000;
+    color: #333;
+    background-color: #f2f2f2;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 8px;
+    border-color: #333;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    padding-top: 7px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+#roster-name{
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+}
+
+#roster-date{
+    margin: 0;
+    float: right;
+    display: block;
+}
+
+#roster-image{
+    float: left;
+    width: 30px;
+    margin-top: -5px;
+    margin-right: 5px;
+}
+
+.roster-last{
+    margin-bottom: 0;
+}
+
+/* FOOTER */
+#footer-wrap{
+    font-size: 8pt;
+    text-align: right;
+    background-color: #333;
+    color: #F2F2F2;
+    width: 920px;
+    padding: 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* QUERY */
+/* #query{
+    display: none;
+} */
